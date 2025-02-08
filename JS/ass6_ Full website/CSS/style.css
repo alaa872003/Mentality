@@ -1,0 +1,120 @@
+
+body {
+  background-color: #f8f9fa;
+}
+.img-fluid {
+  height: 100%;
+  object-fit: cover;
+}
+body {
+  background-color: #f8f9fa;
+}
+
+.course-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.course-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.badge-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+.register-hover:hover {
+  background-color: #dc3545 ; /* Turns red on hover */
+  border-color: #dc3545 ;
+  color: white ;
+}
+
+body {
+  background-color: #f4f5fa;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.course-info {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.payment-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-purple {
+  background: #dc3545;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+}
+
+
+
+.input-box {
+  background: #f0f1fa;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.form-check-input:checked {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+/* course-details page */
+
+body {
+  background-color: #f4f5fa;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.course-info {
+  background: #f4f5fa;;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.payment-section {
+  background: #f4f5fa;;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+.input-box {
+  background: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+} 
+
+

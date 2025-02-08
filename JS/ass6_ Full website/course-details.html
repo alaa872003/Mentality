@@ -1,0 +1,85 @@
+<!-- course ditails -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Payment</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">E-Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <span id="welcomeMessage" class="nav-link fw-bold"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn  register-hover mx-2" href="register.html" id="registerBtn">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-danger mx-2 " id="logoutBtn">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="container mt-5 ">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="course-info  ">
+                <h2 class="mb-3"></h2>
+                <p><strong>Instructor:</strong> </p>
+                <p><strong>Duration:</strong> </p>
+                <p><strong>Price:</strong></p>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis mollitia in minus atque fugiat voluptatum numquam repellat vero ab autem!</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="payment-section shadow">
+                <h3 class="mb-3">Payment Details</h3>
+                <form id="paymentForm">
+                    <div class="mb-3">
+                        <label for="cardName" class="form-label">Cardholder's Name</label>
+                        <input type="text" class="form-control input-box" id="cardName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label">Card Number</label>
+                        <div class="d-flex align-items-center input-box">
+                            <img src="IMG/credit.jpg" width="30" class="me-2">
+                            <input type="text" class="form-control border-0" id="cardNumber" maxlength="16" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="expiryDate" class="form-label">Expiry Date</label>
+                            <input type="text" class="form-control input-box" id="expiryDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cvv" class="form-label">CVC</label>
+                            <input type="text" class="form-control input-box" id="cvv" maxlength="3" required>
+                        </div>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="saveCard">
+                        <label class="form-check-label" for="saveCard">Remember bank card</label>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100">Pay Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/course.js"></script>
+
+</body>
+</html> 

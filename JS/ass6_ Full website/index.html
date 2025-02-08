@@ -1,0 +1,231 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">E-Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <span id="welcomeMessage" class="nav-link fw-bold"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn  register-hover mx-2" href="register.html" id="registerBtn">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-danger mx-2 " id="logoutBtn">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold">Featured Course</h3>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-lg-4 col-md-6">
+                <div class="card course-card">
+                    <img src="IMG/fd02269f074ac7a76340548bbc4e69b2ca5801d2.png" class="card-img-top" alt="Course Image">
+                    <div class="badge badge-overlay">Class UX Design</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>18 Lessons</span>
+                            <span>1h 40m</span>
+                            <span>89 Participants</span>
+                        </div>
+                        <h6 class="fw-bold mt-2">Wiena Bowman</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5">$480.00 <small class="text-muted">/ year</small></span>
+                            <button class="btn btn-dark btn-sm" onclick="goToDetails(this)">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card course-card">
+                    <img src="IMG/web-dev-coding.jpg" class="card-img-top" alt="Course Image">
+                    <div class="badge badge-overlay">Class Web Developer</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>18 Lessons</span>
+                            <span>1h 40m</span>
+                            <span>89 Participants</span>
+                        </div>
+                        <h6 class="fw-bold mt-2">Jonathan William</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5">$498.00 <small class="text-muted">/ year</small></span>
+                            <button class="btn btn-dark btn-sm" onclick="goToDetails(this)">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card course-card">
+                    <img src="IMG/major-components-of-digital-marketing.png" class="card-img-top" alt="Course Image">
+                    <div class="badge badge-overlay">Class Digital Marketing</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>15 Lessons</span>
+                            <span>1h 20m</span>
+                            <span>75 Participants</span>
+                        </div>
+                        <h6 class="fw-bold mt-2">Sophia Miller</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5">$399.00 <small class="text-muted">/ year</small></span>
+                            <button class="btn btn-dark btn-sm" onclick="goToDetails(this)">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6">
+                <div class="card course-card">
+                    <img src="IMG/fd02269f074ac7a76340548bbc4e69b2ca5801d2.png" class="card-img-top" alt="Course Image">
+                    <div class="badge badge-overlay">Class Digital Marketing</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>15 Lessons</span>
+                            <span>1h 20m</span>
+                            <span>75 Participants</span>
+                        </div>
+                        <h6 class="fw-bold mt-2">Sophia Miller</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5">$399.00 <small class="text-muted">/ year</small></span>
+                            <button class="btn btn-dark btn-sm" onclick="goToDetails(this)">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6">
+                <div class="card course-card">
+                    <img src="IMG/major-components-of-digital-marketing.png" class="card-img-top" alt="Course Image">
+                    <div class="badge badge-overlay">Class Digital Marketing</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>15 Lessons</span>
+                            <span>1h 20m</span>
+                            <span>75 Participants</span>
+                        </div>
+                        <h6 class="fw-bold mt-2">Sophia Miller</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5">$399.00 <small class="text-muted">/ year</small></span>
+                            <button class="btn btn-dark btn-sm" onclick="goToDetails(this)">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6">
+                <div class="card course-card">
+                    <img src="IMG/web-dev-coding.jpg" class="card-img-top" alt="Course Image">
+                    <div class="badge badge-overlay">Class Digital Marketing</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>15 Lessons</span>
+                            <span>1h 20m</span>
+                            <span>75 Participants</span>
+                        </div>
+                        <h6 class="fw-bold mt-2">Sophia Miller</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5">$399.00 <small class="text-muted">/ year</small></span>
+                            <button class="btn btn-dark btn-sm" onclick="goToDetails(this)">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6">
+                <div class="card course-card">
+                    <img src="IMG/fd02269f074ac7a76340548bbc4e69b2ca5801d2.png" class="card-img-top" alt="Course Image">
+                    <div class="badge badge-overlay">Class Digital Marketing</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>15 Lessons</span>
+                            <span>1h 20m</span>
+                            <span>75 Participants</span>
+                        </div>
+                        <h6 class="fw-bold mt-2">Sophia Miller</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5">$399.00 <small class="text-muted">/ year</small></span>
+                            <button class="btn btn-dark btn-sm" onclick="goToDetails(this)">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6">
+                <div class="card course-card">
+                    <img src="IMG/major-components-of-digital-marketing.png" class="card-img-top" alt="Course Image">
+                    <div class="badge badge-overlay">Class Digital Marketing</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>15 Lessons</span>
+                            <span>1h 20m</span>
+                            <span>75 Participants</span>
+                        </div>
+                        <h6 class="fw-bold mt-2">Sophia Miller</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5">$399.00 <small class="text-muted">/ year</small></span>
+                            <button class="btn btn-dark btn-sm" onclick="goToDetails(this)">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6">
+                <div class="card course-card">
+                    <img src="IMG/web-dev-coding.jpg" class="card-img-top" alt="Course Image">
+                    <div class="badge badge-overlay">Class Digital Marketing</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>15 Lessons</span>
+                            <span>1h 20m</span>
+                            <span>75 Participants</span>
+                        </div>
+                        <h6 class="fw-bold mt-2">Sophia Miller</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5">$399.00 <small class="text-muted">/ year</small></span>
+                            <button class="btn btn-dark btn-sm" onclick="goToDetails(this)">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6">
+                <div class="card course-card">
+                    <img src="IMG/fd02269f074ac7a76340548bbc4e69b2ca5801d2.png" class="card-img-top" alt="Course Image">
+                    <div class="badge badge-overlay">Class Digital Marketing</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>15 Lessons</span>
+                            <span>1h 20m</span>
+                            <span>75 Participants</span>
+                        </div>
+                        <h6 class="fw-bold mt-2">Sophia Miller</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5">$399.00 <small class="text-muted">/ year</small></span>
+                            <button class="btn btn-dark btn-sm" onclick="goToDetails(this)">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html> 
+ 
