@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+     margin: 0;
+    padding: 0; 
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.logo{
+    padding:20px ;
+}
+.links{
+    padding:40px ;
+    padding-left: 50px;
+}
+.links a{
+text-decoration: none;
+color: black;
+margin: 20px;
+
+}
+
+.buttons {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 5px;
+    margin-top: 20px;
+    width: 200px; 
+    height: 40px; 
+    background-color: rgb(220, 216, 216); 
+    border-radius: 10px;
+    position: absolute;
+    right: 150px;
+}
+
+.buttons button {
+    background-color: transparent; 
+    border: none; 
+    border-radius: 10px; 
+    width: 106px; 
+    height: 35px; 
+    color: black; 
+    font-weight: bold;
+    cursor: pointer; 
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+.buttons #login:hover {
+    background-color: black;
+    color: white;
+}
+
+.buttons #signup {
+    background-color: black;
+    color: white; 
+    margin-left: 10px;
+}
+
+.buttons #login:hover ~ #signup  {
+    background-color: transparent; 
+    color: #000;
+}
+
+main{
+display:grid;
+grid-template-columns: repeat(auto-fill,1fr);
+gap: 15px;
+/* justify-items: center;
+align-items: center; */
+grid-template-areas:
+"header header header header header header header header"
+"card1 card1 card1 card1 card2 card2 card2 card2"
+"card1 card1 card1 card1 card3 card3 card4 card4"
+;
+}
+
+
+.card{
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    color: white;
+}
+.card span{
+    color: rgba(255, 255, 255, 0.408);
+    font-size: 10px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.card p{
+    font-size: 50px;
+    /* font-weight: bold; */
+    position: relative;
+    top: 100px;
+    left: 20px;
+
+}
+.card1{
+    height: 600px;
+    background-image: url(/photo/james-bussey-3XIp-3hnFPw-unsplash.jpg);
+    grid-area: card1;
+    position: relative;
+}
+.card1 img{
+    position: absolute;
+    right: 10px;
+}
+.card .s{
+    margin: 20px;
+    padding-top: 20px;
+}
+#but{
+    width: 200px;
+    height: 70px;
+    background-color: 
+    #e2e3e7;
+    position: absolute;
+    left:20px;
+    bottom: 50px;
+    color: #f8f2f2f0;
+    border-radius: 10px;
+    display: flex;
+
+
+}
+#but span{
+    color: #00000088;
+  
+
+}
+#but button{
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    /* position: relative;
+    top: 18px;
+    left: 5px; */
+}
+#but img{
+    width: 40px;
+    margin-top: 15px;
+}
+#but img::before{
+   content:'';
+   display: block;
+   position: absolute;
+
+   width: 1px;
+   height: 70px;
+   background-color: #000;
+   top: 0;
+   left: 0;
+}
+.card2{
+    background-image: url(/photo/mark-mc-neill-JNC32GqudJ8-unsplash.jpg);
+    grid-area: card2;
+    position: relative;
+}
+    .card2 span{
+        color: #000000b2;
+    }
+    .card2 img{
+        position: absolute;
+        right: 10px;
+    }
+.card3{ 
+    background-image: url(/photo/richard-FZ6engkSR5Y-unsplash.jpg);
+    grid-area: card3;
+    position: relative;
+
+}
+    .card3 img{
+        position: absolute;
+        right: 10px;
+    }
+.card4{
+    background-image:url(/photo/akhil-abhilash-nAgOC9K_QKc-unsplash.jpg) ;
+
+     grid-area: card4;
+     position: relative;
+
+    }
+        .card4 img{
+            position: absolute;
+            right: 10px;
+        }
+

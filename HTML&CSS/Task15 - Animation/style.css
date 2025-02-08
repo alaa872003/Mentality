@@ -1,0 +1,127 @@
+*{
+    font-size: 20px;
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+    margin: 0;
+   padding: 0; 
+   background-color:#3fe0d0
+
+   ;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   height: 100px;
+   width: 100%;
+   display: flex;
+   position: relative;
+}
+
+.logo::after{
+    content: "LOGO";
+    font-weight: bold;
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    font-size: 25px;
+}
+.links{
+   /* padding:40px ; */
+   position: absolute;
+   left: 350px;
+   top: 40px;
+
+}
+.links a{
+          text-align: center;
+
+text-decoration: none;
+color: black;
+margin: 20px;
+font-weight: bold;
+
+}
+
+header .buttons {
+   
+   display: flex;
+   gap: 10px;
+   position: absolute;
+   right: 150px;
+}
+
+.buttons button {
+    padding: 5px;
+   margin-top: 20px;
+   background-color: #314e51; 
+   border: none; 
+   border-radius: 10px; 
+   width: 106px; 
+   height: 45px; 
+   color: white; 
+   font-weight: bold;
+   cursor: pointer; 
+   font-size: 17px;
+   transition: transform .4s ease,opacity .4s ease;
+}
+.buttons button:hover{
+    transform: scale(.8);
+    opacity: .8;
+}
+
+main{
+    display: flex;
+    margin: 100px;
+}
+
+.profile img{
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    margin-left: 350px;
+    /* box-shadow:4px 4px 16px 20px rgb(240, 240, 240);  */
+    object-fit: cover;
+    position: relative;
+    /* animation-name: photo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; */
+    animation: photo 1s linear infinite alternate ;
+    transition: box-shadow .4s ease;
+}
+
+.profile img:hover{
+    animation-play-state: paused;
+    box-shadow:4px 4px 16px 20px #84d1da   ; 
+
+}
+
+
+main .buttons{
+    margin-top: 50px;
+}
+
+main .buttons button{
+    margin: 10px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom:10px ;
+}
+span{
+    font-weight: bold;
+}
+
+@keyframes photo{
+from{
+    top: 0%;
+}
+to{
+top: 75%;
+}
+}
+
